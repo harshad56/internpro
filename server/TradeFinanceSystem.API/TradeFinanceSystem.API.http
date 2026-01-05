@@ -1,0 +1,6 @@
+@TradeFinanceSystem.API_HostAddress = http://localhost:5079
+
+GET {{TradeFinanceSystem.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

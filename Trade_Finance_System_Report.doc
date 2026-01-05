@@ -1,0 +1,108 @@
+<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset="utf-8">
+<title>Trade Finance System Report</title>
+<style>
+body { font-family: 'Calibri', sans-serif; font-size: 11pt; }
+h1 { color: #2E74B5; font-size: 16pt; margin-top: 20px; }
+h2 { color: #1F4E79; font-size: 14pt; margin-top: 15px; border-bottom: 1px solid #ccc; padding-bottom: 5px; }
+h3 { color: #2E74B5; font-size: 12pt; margin-top: 10px; }
+table { border-collapse: collapse; width: 100%; margin-top: 10px; }
+th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+th { background-color: #f2f2f2; color: #333; }
+.attribution { background-color: #e8f4f8; padding: 10px; border-left: 5px solid #2E74B5; margin-bottom: 20px; }
+</style>
+</head>
+<body>
+
+<h1>Trade Finance System - Project Completion Report</h1>
+
+<div class="attribution">
+    <p><strong>Developed Individually by:</strong> Harshad Bagal<br>
+    <strong>Scope:</strong> Full Stack Development (Frontend & Backend)</p>
+</div>
+
+<h2>1. Project Overview</h2>
+<p>The <strong>Trade Finance System</strong> is a comprehensive banking application designed to digitize and automate trade finance operations. It features a modern, responsive frontend built with <strong>React & Material UI</strong> and a robust backend powered by <strong>.NET 8 Web API</strong> and <strong>SQL Server</strong>.</p>
+
+<h2>2. Completed Modules & Features</h2>
+
+<h3>A. Core Trade Finance Modules</h3>
+<table>
+<tr><th>Module</th><th>Features Implemented</th><th>Status</th></tr>
+<tr><td><strong>Letter of Credit (LC)</strong></td><td>• LC Issuance/Application<br>• LC Amendment<br>• Document Checking Interface</td><td>✅ Completed</td></tr>
+<tr><td><strong>Bank Guarantee (BG)</strong></td><td>• BG Issuance<br>• Limit Utilization Check<br>• Approval Workflow</td><td>✅ Completed</td></tr>
+<tr><td><strong>Documentary Collections</strong></td><td>• Import/Export Collection Lodging<br>• Drawer/Drawee/Bank Details Form</td><td>✅ Completed</td></tr>
+<tr><td><strong>Trade Loans</strong></td><td>• Loan Creation linked to LC/BG<br>• Repayment Schedule Visualization</td><td>✅ Completed</td></tr>
+</table>
+
+<h3>B. Customer Management (CRM)</h3>
+<table>
+<tr><th>Feature</th><th>Details</th><th>Status</th></tr>
+<tr><td><strong>Customer 360 Profile</strong></td><td>• View detailed business profile<br>• Facility Limits Dashboard (LC/BG/Loans)<br>• Risk Rating & Sanction Status</td><td>✅ Completed</td></tr>
+<tr><td><strong>Onboarding</strong></td><td>• "Add Business Customer" Dialog<br>• Auto-generation of CIF ID</td><td>✅ Completed</td></tr>
+<tr><td><strong>Profile Management</strong></td><td>• <strong>[NEW]</strong> Edit Customer Profile (Name, Risk, Country)<br>• <strong>[NEW]</strong> Email Address Integration (View/Edit)</td><td>✅ Completed</td></tr>
+</table>
+
+<h3>C. Admin & Configuration</h3>
+<table>
+<tr><th>Feature</th><th>Details</th><th>Status</th></tr>
+<tr><td><strong>Charges Configuration</strong></td><td>• Setup Commission Rates (Flat/Percentage)<br>• <strong>[NEW]</strong> Full CRUD (Add, Edit, Delete Charges)<br>• <strong>[NEW]</strong> Database Persistence (Not Mock)</td><td>✅ Completed</td></tr>
+<tr><td><strong>User Management</strong></td><td>• User Role Assignment (Maker/Checker/Admin)<br>• Security & Access Control</td><td>✅ Completed</td></tr>
+</table>
+
+<h3>D. Compliance & Accounting</h3>
+<table>
+<tr><th>Feature</th><th>Details</th><th>Status</th></tr>
+<tr><td><strong>Compliance Risk</strong></td><td>• AML Screening Checks<br>• Sanction List Verification</td><td>✅ Completed</td></tr>
+<tr><td><strong>General Ledger (GL)</strong></td><td>• Automated GL Posting for Transactions<br>• GL Entries Viewer (Debit/Credit Logs)</td><td>✅ Completed</td></tr>
+</table>
+
+<h3>E. Dashboard & Reporting</h3>
+<table>
+<tr><th>Feature</th><th>Details</th><th>Status</th></tr>
+<tr><td><strong>Executive Dashboard</strong></td><td>• Real-time Charts (Transaction Volume, Risk Exposure)<br>• "Pending Tasks" Widget</td><td>✅ Completed</td></tr>
+<tr><td><strong>Audit Logs</strong></td><td>• Full Audit Trail of all user actions</td><td>✅ Completed</td></tr>
+</table>
+
+<hr/>
+
+<h2>3. Technical Architecture</h2>
+
+<h3>Frontend (Client)</h3>
+<ul>
+<li><strong>Framework</strong>: React 18 (Vite)</li>
+<li><strong>Language</strong>: TypeScript</li>
+<li><strong>UI Library</strong>: Material UI (MUI v5)</li>
+<li><strong>State Management</strong>: React Hooks</li>
+<li><strong>Routing</strong>: React Router DOM v6</li>
+<li><strong>Data Fetching</strong>: Axios</li>
+</ul>
+
+<h3>Backend (Server)</h3>
+<ul>
+<li><strong>Framework</strong>: .NET 8 ASP.NET Core Web API</li>
+<li><strong>Language</strong>: C#</li>
+<li><strong>Data Access</strong>: Dapper (High-performance micro-ORM)</li>
+<li><strong>Database</strong>: Microsoft SQL Server</li>
+<li><strong>API Documentation</strong>: Swagger / OpenAPI</li>
+</ul>
+
+<h2>4. Database Setup</h2>
+<p>All necessary SQL scripts are located in the <code>database/</code> folder.</p>
+<ul>
+<li><code>01_Schema_Create.sql</code>: Base tables (Users, Customers, etc.)</li>
+<li><code>05_Charges_Schema.sql</code>: <strong>[NEW]</strong> Schema for Charges Configuration.</li>
+<li><code>07_Collections_Table.sql</code>: Schema for Doc Collections.</li>
+<li><code>08_GL_Table.sql</code>: Schema for General Ledger.</li>
+</ul>
+
+<h2>5. Next Steps / Recommendations</h2>
+<ul>
+<li><strong>Testing</strong>: Perform end-to-end testing of the LC Issuance -> Approval -> Loan Creation flow.</li>
+<li><strong>Deployment</strong>: Configure IIS or Docker for deployment.</li>
+<li><strong>Security</strong>: Implement JWT Authentication for secure API access (currently using mock auth).</li>
+</ul>
+
+</body>
+</html>

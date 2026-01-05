@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Harsh\\OneDrive\\Desktop\\task3_intern\\server\\TradeFinanceSystem.API\\wwwroot\\uploads\\3e7cd911-225b-4d23-b69f-d905483fcfc6_CKYC-API-Secured-Search-Document_Ver1.3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\3e7cd911-225b-4d23-b69f-d905483fcfc6_CKYC-API-Secured-Search-Document_Ver1.3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Harsh\\OneDrive\\Desktop\\task3_intern\\server\\TradeFinanceSystem.API\\wwwroot\\uploads\\68bc1fc2-e26f-4744-be00-f05670bb808e_Gitcommands_new.pdf",
+      "PackagePath": "staticwebassets\\uploads\\68bc1fc2-e26f-4744-be00-f05670bb808e_Gitcommands_new.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Harsh\\OneDrive\\Desktop\\task3_intern\\server\\TradeFinanceSystem.API\\wwwroot\\uploads\\8159de50-c495-49d1-81c0-ec48d7423eb6_CKYC-API-Secured-Search-Document_Ver1.3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\8159de50-c495-49d1-81c0-ec48d7423eb6_CKYC-API-Secured-Search-Document_Ver1.3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Harsh\\OneDrive\\Desktop\\task3_intern\\server\\TradeFinanceSystem.API\\wwwroot\\uploads\\a3c71111-2c3a-4ff2-ab92-0d769ac0b205_CKYC-API-Secured-Search-Document_Ver1.3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\a3c71111-2c3a-4ff2-ab92-0d769ac0b205_CKYC-API-Secured-Search-Document_Ver1.3.pdf"
+    },
+    {
+      "Id": "C:\\Users\\Harsh\\OneDrive\\Desktop\\task3_intern\\server\\TradeFinanceSystem.API\\wwwroot\\uploads\\aec9be74-0e2f-4c0d-a3a2-b20a5139b713_CKYC-API-Secured-Search-Document_Ver1.3.pdf",
+      "PackagePath": "staticwebassets\\uploads\\aec9be74-0e2f-4c0d-a3a2-b20a5139b713_CKYC-API-Secured-Search-Document_Ver1.3.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TradeFinanceSystem.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.TradeFinanceSystem.API.props",
+      "PackagePath": "build\\TradeFinanceSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.TradeFinanceSystem.API.props",
+      "PackagePath": "buildMultiTargeting\\TradeFinanceSystem.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.TradeFinanceSystem.API.props",
+      "PackagePath": "buildTransitive\\TradeFinanceSystem.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
