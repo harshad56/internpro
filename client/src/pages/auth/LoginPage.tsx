@@ -211,18 +211,7 @@ const LoginPage: React.FC = () => {
                         >
                             {loading ? 'Verifying...' : 'Sign In'}
                         </Button>
-                        <Grid container>
-                            <Grid item xs>
-                                <Button size="small" sx={{ textTransform: 'none' }}>
-                                    Forgot password?
-                                </Button>
-                            </Grid>
-                            <Grid item>
-                                <Button size="small" sx={{ textTransform: 'none' }}>
-                                    Contact Support
-                                </Button>
-                            </Grid>
-                        </Grid>
+
                     </Box>
                 </Box>
             </Grid>
