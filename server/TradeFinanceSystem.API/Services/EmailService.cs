@@ -29,6 +29,7 @@ namespace TradeFinanceSystem.API.Services
             {
                 // For development, we might accept invalid certs
                 client.ServerCertificateValidationCallback = (s, c, h, e) => true;
+                client.Timeout = 5000; // 5 Seconds Timeout for fast fallback
 
                 var smtpServer = _configuration["EmailSettings:SmtpServer"] ?? "smtp.gmail.com";
                 var port = int.Parse(_configuration["EmailSettings:Port"] ?? "587");
