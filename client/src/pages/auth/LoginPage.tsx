@@ -42,7 +42,8 @@ const LoginPage: React.FC = () => {
                 // Fallback for legacy flow if ever enabled
                 localStorage.setItem('token', response.data.token);
                 localStorage.setItem('user', JSON.stringify(response.data.user));
-                navigate('/');
+                // FORCE RELOAD to ensure App.tsx sees the new token
+                window.location.href = '/';
             }
         } catch (err: any) {
             console.error(err);
