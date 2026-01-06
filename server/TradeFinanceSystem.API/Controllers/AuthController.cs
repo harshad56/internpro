@@ -32,6 +32,9 @@ namespace TradeFinanceSystem.API.Controllers
                 // MASTER LOGIN BYPASS (For Testing Only)
                 if (login.Username == "harshadbagal77@gmail.com" && login.Password == "1234")
                 {
+                    // Log Audit for Master Login
+                    await _auditRepository.LogAction("Login", "User", "999", "MasterAdmin", "User logged in via MASTER BYPASS");
+
                     return Ok(new 
                     { 
                         Token = "master_test_token_" + Guid.NewGuid(),
